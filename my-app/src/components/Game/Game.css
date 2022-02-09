@@ -1,6 +1,12 @@
 .App {
   text-align: center;
 }
+.Game{
+  background-color: cyan;
+  margin: 0px;
+  width: 250px;
+  height: 150px;
+}
 
 .App-logo {
   height: 40vmin;

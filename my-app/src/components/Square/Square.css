@@ -1,5 +1,6 @@
 .square{
     height: 30px;
     width: 30px;
-    margin: 0px;
+    margin: -3px;
+    row-gap: 3px;
 }

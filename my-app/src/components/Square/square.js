@@ -17,9 +17,10 @@ export default function Square({togglePlayer, player}) {
   }
   return (
     <div className = "square" >
-    <button onClick = {handleButton} > {buttonText} </button>
+      <button onClick = {handleButton} > {buttonText} </button>
     </div>
   )
 }
 
+    
 
