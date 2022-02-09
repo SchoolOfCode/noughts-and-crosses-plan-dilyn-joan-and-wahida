@@ -8,7 +8,7 @@ import Player from '../Player/player';
 
 
 function Game() {
-  const [gameBoard, setGameBoard] = useState([{player:""},{player:""},{player:""},{player:""},{player:""},{player:""},{player:""},{player:""},{player:""}]);
+  const [gameBoard, setGameBoard] = useState([null,null,null,null,null,null,null,null,null]);
   const [isPlayer1, setIsPlayer1] = useState(true)
   const currentPlayer = isPlayer1 ? "X": "O";
   const winner = findWinner(gameBoard)
@@ -17,9 +17,9 @@ function Game() {
     if(winner || gameBoard[index]) {
       return;
     }
-    console.log(index)
-    gameBoard[index].player = currentPlayer
-    setGameBoard(gameBoard);
+    setGameBoard([
+      ...gameBoard.slice(0,index), currentPlayer, ...gameBoard.slice(index+1)
+    ]);
     setIsPlayer1(!isPlayer1)
     console.log(gameBoard)
   }

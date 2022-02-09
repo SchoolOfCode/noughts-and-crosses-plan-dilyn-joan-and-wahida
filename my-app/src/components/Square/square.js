@@ -1,12 +1,9 @@
 import React, {useState} from 'react'
 import "./Square.css"
 
-export default function Square({value, handleButton, key}) {
-  console.log(value)
+export default function Square({value, handleButton, index}) {
   return (
-      <button onClick={()=> handleButton(key)}> {value} </button>
+      <button onClick={()=> handleButton(index)}> {value} </button>
   )
 }
-
-    
 
