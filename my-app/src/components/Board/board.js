@@ -4,18 +4,18 @@ import "./Board.css"
 
 
 
-export default function Board({handleButton, buttonText}) {
+export default function Board({togglePlayer, player}) {
   return (
     <div  className = "BOARD" >
-      <Square className = "TL" handleButton = {handleButton} buttonText={buttonText}/>
-      <Square className = "TM" handleButton = {handleButton} buttonText={buttonText}/>
-      <Square className = "TR" handleButton = {handleButton} buttonText={buttonText}/>
-      <Square className = "ML" handleButton = {handleButton} buttonText={buttonText}/>
-      <Square className = "MM" handleButton = {handleButton} buttonText={buttonText}/>
-      <Square className = "MR" handleButton = {handleButton} buttonText={buttonText}/>
-      <Square className = "BL" handleButton = {handleButton} buttonText={buttonText}/>
-      <Square className = "BM" handleButton = {handleButton} buttonText={buttonText}/>
-      <Square className = "BR" handleButton = {handleButton} buttonText={buttonText}/>
+      <Square className = "TL" togglePlayer = {togglePlayer} player={player}/>
+      <Square className = "TM" togglePlayer = {togglePlayer} player={player}/>
+      <Square className = "TR" togglePlayer = {togglePlayer} player={player}/>
+      <Square className = "ML" togglePlayer = {togglePlayer} player={player}/>
+      <Square className = "MM" togglePlayer = {togglePlayer} player={player}/>
+      <Square className = "MR" togglePlayer = {togglePlayer} player={player}/>
+      <Square className = "BL" togglePlayer = {togglePlayer} player={player}/>
+      <Square className = "BM" togglePlayer = {togglePlayer} player={player}/>
+      <Square className = "BR" togglePlayer = {togglePlayer} player={player}/>
 
     </div>
   )

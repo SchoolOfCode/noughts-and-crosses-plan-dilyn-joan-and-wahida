@@ -113,3 +113,5 @@ Goes to these components:
     - value
   - Render
     - `"", X, or O` - value
+
+Player1

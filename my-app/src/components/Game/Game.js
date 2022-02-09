@@ -1,26 +1,32 @@
 import './Game.css';
 import Board from '../Board/board.js';
 import { useState } from 'react';
+import Player from '../Player/player';
 
 
 
 
 function Game() {
   const [gameBoard, setGameBoard] = useState([null,null,null,null,null,null,null,null,null]);
+  const [player, setPlayer] = useState('Player1');
 
-  const [buttonText, setButtonText] = useState("0")
+  function togglePlayer(){
+    if(player==="Player1") {
+      setPlayer("Player2")
+    } else {
+    setPlayer("Player1")
+    }}
+    
 
-  function handleButton(){
-      setButtonText("X")
-     console.log("button") 
-  }
   return (
     <div className="Game">
       Hello
-      <Board handleButton={handleButton} buttonText = {buttonText}  />
+      <Board togglePlayer = {togglePlayer} player = {player}/>
+      <Player player={player}/>
     </div>
     
   );
 }
+
 
 export default Game;
