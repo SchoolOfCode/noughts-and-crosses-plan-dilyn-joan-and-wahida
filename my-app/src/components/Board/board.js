@@ -4,18 +4,13 @@ import "./Board.css"
 
 
 
-export default function Board({togglePlayer, player}) {
+export default function Board({gameBoard,handleButton}) {
   return (
-    <div  className = "BOARD" >
-      <Square className = "TL" togglePlayer = {togglePlayer} player={player}/>
-      <Square className = "TM" togglePlayer = {togglePlayer} player={player}/>
-      <Square className = "TR" togglePlayer = {togglePlayer} player={player}/>
-      <Square className = "ML" togglePlayer = {togglePlayer} player={player}/>
-      <Square className = "MM" togglePlayer = {togglePlayer} player={player}/>
-      <Square className = "MR" togglePlayer = {togglePlayer} player={player}/>
-      <Square className = "BL" togglePlayer = {togglePlayer} player={player}/>
-      <Square className = "BM" togglePlayer = {togglePlayer} player={player}/>
-      <Square className = "BR" togglePlayer = {togglePlayer} player={player}/>
+    <div  className = "board" >
+      {gameBoard.map((square,index) => {
+     <button onClick={()=> handleButton(index)}> {square.player} </button>
+      // <Square key={index} value={square.player} handleButton={handleButton}/>
+})}
 
     </div>
   )
