@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default function square() {
+export default function Square() {
   return (
-    <div>square</div>
+    <div className = "square" >
+    <input type="text"/>
+    </div>
   )
 }

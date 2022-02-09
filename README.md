@@ -110,5 +110,6 @@ Goes to these components:
 - Square
   - Props
     - make a move
+    - value
   - Render
-    - `"", X, or O`
+    - `"", X, or O` - value

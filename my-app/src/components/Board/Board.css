@@ -1,0 +1,18 @@
+.BOARD {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    .TL { grid-area: 1 / 1 / 2 / 2; }
+    .TM { grid-area: 1 / 2 / 2 / 3; }
+    .TR { grid-area: 1 / 3 / 2 / 4; }
+    .ML { grid-area: 2 / 1 / 3 / 2; }
+    .MM { grid-area: 2 / 2 / 3 / 3; }
+    .MR { grid-area: 2 / 3 / 3 / 4; }
+    .BL { grid-area: 3 / 1 / 4 / 2; }
+    .BM { grid-area: 3 / 2 / 4 / 3; }
+    .BR { grid-area: 3 / 3 / 4 / 4; }
+
+    
